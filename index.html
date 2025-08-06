@@ -51,7 +51,7 @@
             </button>
         </div>
         <!-- Menú Móvil -->
-        <div id="mobile-menu" class="hidden md:hidden">
+        <div id="mobile-menu" class="hidden text-center md:hidden">
             <a href="#sobre-mi" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Sobre Mí</a>
             <a href="#proyectos" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Proyectos</a>
             <a href="#contacto" class="block py-2 px-6 text-sm text-slate-600 hover:bg-slate-100">Contacto</a>
@@ -65,7 +65,7 @@
                 <img src="https://placehold.co/150x150/e2e8f0/334155?text=Tu+Foto" 
                      alt="Foto de perfil del desarrollador" 
                      class="w-40 h-40 rounded-full mx-auto mb-6 border-4 border-slate-200 shadow-lg">
-                <h1 class="text-4xl md:text-6xl font-bold text-slate-800 mb-2">Almendras, Jorge</h1>
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-800 mb-2">Almendras, Jorge Luis León</h1>
                 <p class="text-xl md:text-2xl text-indigo-600 font-medium mb-8">Desarrollador Web Front-End | HTML, CSS, JavaScript</p>
                 <div class="flex justify-center space-x-4">
                     <a href="#" class="text-slate-500 hover:text-indigo-600" aria-label="GitHub">
@@ -207,49 +207,11 @@
     <!-- Pie de Página -->
     <footer class="bg-slate-800 text-slate-400 py-8">
         <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2025 [Tu Nombre Aquí]. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Almendras, Jorge Luis León. Todos los derechos reservados.</p>
             <p class="text-sm mt-2">Diseñado y desarrollado con ❤️.</p>
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Lógica para el menú móvil
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Cerrar menú móvil al hacer clic en un enlace
-            document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-
-            // Lógica para el formulario de contacto
-            const contactForm = document.getElementById('contact-form');
-            const successMessage = document.getElementById('form-success-message');
-
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault(); // Previene el envío real del formulario
-
-                // Aquí podrías agregar una integración con un servicio como EmailJS o Formspree
-                // Por ahora, solo mostraremos un mensaje de éxito.
-
-                successMessage.classList.remove('opacity-0', '-translate-y-4');
-                successMessage.classList.add('opacity-100', 'translate-y-0');
-
-                contactForm.reset(); // Limpia el formulario
-
-                setTimeout(() => {
-                    successMessage.classList.remove('opacity-100', 'translate-y-0');
-                    successMessage.classList.add('opacity-0', '-translate-y-4');
-                }, 5000); // Oculta el mensaje después de 5 segundos
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
