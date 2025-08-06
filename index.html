@@ -159,18 +159,19 @@
                 <p class="text-center text-slate-600 max-w-2xl mx-auto mb-12">
                     ¿Tienes un proyecto en mente o simplemente quieres saludar? No dudes en enviarme un mensaje. ¡Siempre estoy abierto a nuevas oportunidades y colaboraciones!
                 </p>
-                <form id="contact-form" class="max-w-xl mx-auto">
+
+                <form action="https://formspree.io/f/mblkprjw" method="POST" class="max-w-xl mx-auto" id="contact-form">
                     <div class="mb-4">
                         <label for="name" class="block text-slate-700 text-sm font-bold mb-2">Nombre</label>
-                        <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required >
                     </div>
                     <div class="mb-4">
                         <label for="email" class="block text-slate-700 text-sm font-bold mb-2">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required >
                     </div>
                     <div class="mb-6">
                         <label for="message" class="block text-slate-700 text-sm font-bold mb-2">Mensaje</label>
-                        <textarea id="message" name="message" rows="4" required class="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                        <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required ></textarea>
                     </div>
                     <div class="text-center">
                         <button type="submit" class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 transition-colors">

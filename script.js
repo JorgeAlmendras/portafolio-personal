@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const successMessage = document.getElementById('form-success-message');
 
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault(); // Previene el envío real del formulario
+        //e.preventDefault(); // Previene el envío real del formulario
 
         // Aquí podrías agregar una integración con un servicio como EmailJS o Formspree
         // Por ahora, solo mostraremos un mensaje de éxito.
