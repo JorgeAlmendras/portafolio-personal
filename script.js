@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         successMessage.classList.remove('opacity-0', '-translate-y-4');
         successMessage.classList.add('opacity-100', 'translate-y-0');
 
-        contactForm.reset(); // Limpia el formulario
+        //contactForm.reset(); // Limpia el formulario
 
         setTimeout(() => {
             successMessage.classList.remove('opacity-100', 'translate-y-0');
