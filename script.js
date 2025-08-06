@@ -30,8 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
         //contactForm.reset(); // Limpia el formulario
 
         setTimeout(() => {
+            contactForm.reset(); // Limpia el formulario al cargar la página
             successMessage.classList.remove('opacity-100', 'translate-y-0');
             successMessage.classList.add('opacity-0', '-translate-y-4');
         }, 5000); // Oculta el mensaje después de 5 segundos
     });
+
+    
 });
