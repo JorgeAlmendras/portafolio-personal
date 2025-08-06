@@ -1,0 +1,22 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;/* slate-50 */
+    color: #334155;/* slate-700 */
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.project-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.form-success-message {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}

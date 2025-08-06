@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Almendras, Jorge | Desarrollador Web</title>
     <!-- Chosen Palette: Modern Slate -->
     <!-- Application Structure Plan: Se ha diseñado una aplicación de página única (SPA) con una estructura de navegación lineal y clara. El flujo sigue un orden lógico para un portafolio: Inicio -> Sobre Mí -> Proyectos -> Contacto. Esta estructura es intuitiva y permite a los reclutadores encontrar la información clave rápidamente. La navegación superior fija con scroll suave mejora la experiencia de usuario, permitiendo saltar entre secciones sin esfuerzo. -->
     <!-- Visualization & Content Choices: Report Info: Secciones clave (Inicio, Proyectos, Contacto). Goal: Presentar información de forma profesional y clara. Viz/Presentation Method: Secciones bien definidas con tarjetas para proyectos. Interaction: Navegación con scroll suave, efectos hover en enlaces y tarjetas, y un formulario de contacto funcional con feedback visual. Justification: Esta combinación de estructura y micro-interacciones crea una experiencia de usuario fluida y profesional, cumpliendo el objetivo de impresionar a reclutadores. Library/Method: Vanilla JavaScript para la interactividad, Tailwind CSS para el diseño. -->
@@ -12,28 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* slate-50 */
-            color: #334155; /* slate-700 */
-            
-        }
-        .nav-link {
-            transition: color 0.3s ease;
-        }
-        .project-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        }
-        .form-success-message {
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="antialiased">
 
