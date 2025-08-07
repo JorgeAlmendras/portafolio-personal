@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 5000); // Oculta el mensaje después de 5 segundos
     });
 
-    
+    AOS.init();
 });
 
-AOS.init();
